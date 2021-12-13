@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="./img/menu.png" class="menu-img" alt="" />
+        <img src="./img/logo.png" class="logo-img" alt="" />
+        <ul>
+          <li>
+            <a href="">Latest</a>
+          </li>
+          <li>
+            <a href="">Modern</a>
+          </li>
+          <li>
+            <a href="">Contemporary</a>
+          </li>
+          <li>
+            <a href="">Affordable</a>
+          </li>
+        </ul>
+        <button id="btn" type="button">
+          <span></span>
+        </button>
+      </nav>
+      <div class="lamp-container">
+        <img src="./img/lamp.png" class="lamp" alt="" />
+        <img src="./img/light.png" class="light" alt="" id="light" />
+      </div>
+      <div class="text-container">
+        <h1>Latest in Lighting</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+          quisquam nesciunt blanditiis totam, commodi dolorem necessitatibus
+          placeat? Earum, neque saepe?
+        </p>
+        <a href="">Click All Collections</a>
+        <div class="control">
+          <p>04</p>
+          <div class="line">
+            <span></span>
+          </div>
+          <p>05</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      console.log("hello world");
+      const btn = document.getElementById("btn");
+      const light = document.getElementById("light");
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("active");
+        light.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>
